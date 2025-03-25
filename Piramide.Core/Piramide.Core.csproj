@@ -1,9 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Dependência do xUnit -->
+		<PackageReference Include="xunit" Version="2.4.1" />
+
+		<!-- Dependência do SDK de Testes -->
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+
+		<!-- Runner para integração com o Visual Studio -->
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
+	</ItemGroup>
 
 </Project>
